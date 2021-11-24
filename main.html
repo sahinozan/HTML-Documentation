@@ -1,24 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>HTML Documentation</title>
     <link rel="stylesheet" href="./main.css"/>
+    <link rel="icon" type="image/x-icon" href="html5.png">
 </head>
-
 <body>
+<div id="main_icon">
+    <a href="main.html"><img src="html5.png" alt="HTML5" width="80px" height="80px"></a>
+</div>
+<div id="main_header">
+    <h1><a href="./main.html" style="font-size:30px; text-decoration: none;">HTML Documentation</a></h1>
+</div>
 <div id="sidebar">
-    <h1><a href="./main.html" style="font-size:20px">HTML Documentation</a></h1>
-    <hr>
     <ol id="navigation_menu">
-        <li><a href="link">Content</a></li>
-        <li><a href="link">Content</a></li>
+        <li><a href="link">Introduction</a></li>
+        <li><a href="link">Elements</a></li>
+        <li><a href="link">Quotation</a></li>
+        <li><a href="link">Colors</a></li>
+        <li><a href="link">Links</a></li>
+        <li><a href="link">Images</a></li>
+        <li><a href="link">Tables</a></li>
+        <li><a href="link">Attributes</a></li>
+        <li><a href="link">Lists</a></li>
+        <li><a href="link">Classes</a></li>
+        <li><a href="link">Head</a></li>
+        <li><a href="link">Layout</a></li>
+        <li><a href="link">Forms</a></li>
+        <li><a href="link">Semantics</a></li>
+        <li><a href="link">Code</a></li>
+        <li><a href="link">Summary</a></li>
     </ol>
 </div>
-
 <div id="main">
-    <h2>Introduction</a></h2>
-    <p>Paragraph 1</p>
-    <div id="credits">Developed by <a href="https://github.com/sahinozan">Ozan Sahin</a><br></div>
+    <h2 class="header">Introduction</a></h2>
+    <div id="content">
+        <ul>
+           <li><p>HTML stands for Hyper Text Markup Language.</p></li>
+           <li><p>HTML is the standard markup language for creating Web pages.</p></li>
+           <li><p>HTML describes the structure of a Web page.</p></li>
+        </ul>
+    </div>
+    <h2 class="header">Elements</h2>
+    <div id="content">
+        <ul>
+            <li><p>The HTML element is everything from the start tag to the end tag.</p></li>
+            <li><p>There are some examples below.</p></li>
+        </ul>  
+        <table>
+            <tbody>
+                <tr>
+                    <th>Start Tag</th>
+                    <th>Element</th>
+                    <th>End Tag</th>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;</td>
+                    <td>My First Heading</td>
+                    <td>&lt;h1&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>My First Paragraph</td>
+                    <td>&lt;p&gt;</td>
+                </tr>
+            </tbody>    
+        </table>
+    </div>
+    <h2 class="header">Attributes</h2>
+    <div id="content">
+        <ul>
+            <li><p>All HTML elements can have attributes.</p></li>
+            <li><p>Attributes provide additional information about elements.</p></li>
+        </ul>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>href</td>
+                    <td>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;a&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="footer">Developed by <a href="https://github.com/sahinozan" style="text-decoration: none;">Ozan Sahin</a><br></div>
 </div>
 </body>
 </html>
