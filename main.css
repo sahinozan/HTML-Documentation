@@ -1,0 +1,43 @@
+body {
+    background:#FFE5CC;
+    font:1em Trebuchet MS;
+    word-spacing: 2px;
+    color: #545454;
+    margin: 0;
+}
+
+#sidebar {
+    width:250px;
+    float:left;
+    padding:20px 200px 0 50px;
+}
+
+#sidebar a{
+    color: rgb(50, 210, 210);
+    border:none;
+}
+
+#navigation_menu a{
+    display:block;
+    color:#17ccbd;
+}
+
+ol li{
+    margin: 10px 0;    
+}
+
+#main {
+    margin:0 10% 0 500px;
+    padding:150px;
+}
+
+#footer {
+    padding:30px;
+    text-align:center;
+    background:#000;
+}
+
+#footer a {
+    color:#17ccbd;
+}
+
