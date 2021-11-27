@@ -3,6 +3,7 @@ body {
     font: 1em "Fira Sans", sans-serif;
     word-spacing: 2px;
     color: #7c7c7c;
+    margin: 0px;
 }
 table {
     font-family: arial, sans-serif;
@@ -18,16 +19,28 @@ tr:nth-child(even) {
     background-color: #dddd;
 }
 #main {
-    padding-top: 85px;
+    padding-left: 100px;
+    padding-top: 100px;
     margin: 0px 10% 0px 300px;
-    /*padding: 20px;*/
+    padding: 20px;
 }
 #sidebar {
     position: fixed;
+<<<<<<< HEAD
     width: 200px;
     float:left;
     padding: 20px 0px 30px 20px;
+=======
+<<<<<<< HEAD
+    width: 15%;
+=======
+    width:250px;
+>>>>>>> parent of ad1a070 (.)
+    float:left;
+    padding:20px 0px 20px 20px;
+>>>>>>> 5d9b9f33f2fde0a222f64a608ab28be4e19cca59
     border-right: 5px solid #333;
+    height: 80%;
 }
 #navigation_menu a{
     display:block;
@@ -44,10 +57,24 @@ ol li{
     color: #FF2226;
 }
 #main_header {
-    padding: 10px;
+<<<<<<< HEAD
+    width: 83%;
+    left: 255px;
+=======
+    padding: 7px; 
+>>>>>>> parent of ad1a070 (.)
     background-color: #282c34; 
     border-bottom: 5px solid #333;
+    border-left: 5px solid #333;
     text-align: center;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    position: fixed;
+    bottom: 90%;
+=======
+>>>>>>> parent of ad1a070 (.)
+>>>>>>> 5d9b9f33f2fde0a222f64a608ab28be4e19cca59
 }
 #main_header a:visited {
     text-decoration: none; 
@@ -57,36 +84,42 @@ ol li{
     color: #B026FF;
 }
 #main_icon {
-    /*padding: 5px;
-    padding:20px 0px 20px 20px;*/
     background-color: #282c34; 
-    /*border-bottom: 5px solid #333;*/
     position: absolute;
-    left: 60px;
+<<<<<<< HEAD
+    left: 5%;
+=======
+    left: 50px;
+>>>>>>> parent of ad1a070 (.)
     text-align: center;
     position: fixed;
 }
 #content {
-    padding-top: 40px;
     padding: 10px;
     border: 5px solid greenyellow;
     background-color: white;
     color: #000;
 }
 #footer {
+<<<<<<< HEAD
     width: 200px;
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 5d9b9f33f2fde0a222f64a608ab28be4e19cca59
     padding-top: 36px;
     padding-bottom: 36px;
     padding-right: 39px;
     padding-left: 39px;
+>>>>>>> parent of ad1a070 (.)
     text-align: center;
     background: #282c34;
     border-top: 5px solid rgb(51, 51, 51);
-    border-right: 5px solid rgb(51, 51, 51);
+    padding-top: 25px; 
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
-    position: fixed;
+    width: 100%;
 }
 #footer a {
     color: #FF2226
