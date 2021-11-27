@@ -14,36 +14,37 @@
 </div>
 <div id="sidebar">
     <ol id="navigation_menu">
-        <li><a href="link">Introduction</a></li>
-        <li><a href="link">Elements</a></li>
-        <li><a href="link">Quotation</a></li>
-        <li><a href="link">Colors</a></li>
-        <li><a href="link">Links</a></li>
-        <li><a href="link">Images</a></li>
-        <li><a href="link">Tables</a></li>
-        <li><a href="link">Comments</a></li>
-        <li><a href="link">Attributes</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#elements">Elements</a></li>
+        <li><a href="#attributes">Attributes</a></li>
+        <li><a href="#comments">Comments</a></li>
+        <li><a href="#colors">Colors</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#images">Images</a></li>
         <li><a href="link">Lists</a></li>
+        <li><a href="link">Quotation and Citation</a></li>
+        <li><a href="link">Tables</a></li>
+        <li><a href="link">Test</a></li>
         <li><a href="link">Classes</a></li>
         <li><a href="link">Head</a></li>
         <li><a href="link">Layout</a></li>
         <li><a href="link">Forms</a></li>
         <li><a href="link">Semantics</a></li>
-        <li><a href="link">Code</a></li>
         <li><a href="link">Favicon</a></li>
     </ol>
     <div id="footer">Developed by <a href="https://github.com/sahinozan" style="text-decoration: none;">Ozan Sahin</a><br></div>
 </div>
 <div id="main">
-    <h2 class="header">Introduction</a></h2>
+    <h2 id="introduction" class="header">Introduction</a></h2>
     <div id="content">
         <ul>
            <li><p>HTML stands for Hyper Text Markup Language.</p></li>
            <li><p>HTML is the standard markup language for creating Web pages.</p></li>
            <li><p>HTML describes the structure of a Web page.</p></li>
+           <li><p>HTML elements tell the browser how to display the content.</p></li>
         </ul>
     </div>
-    <h2 class="header">Elements</h2>
+    <h2 id="elements" class="header">Elements</h2>
     <div id="content">
         <ul>
             <li><p>The HTML element is everything from the start tag to the end tag.</p></li>
@@ -66,15 +67,43 @@
                     <td>My First Paragraph</td>
                     <td>&lt;/p&gt;</td>
                 </tr>
-                <tr>
-                    <td>&lt;h2&gt;</td>
-                    <td>My Second Heading</td>
-                    <td>&lt;/h2&gt;</td>
-                </tr>
             </tbody>    
         </table>
+        <h3>Headers (high to low priority)</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Tag</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;Header 1&lt;/h1&gt;</td>
+                    <td><h1>Header 1</h1><br></td>
+                </tr>
+                <tr>
+                    <td>&lt;h2&gt;Header 2&lt;/h2&gt;</td>
+                    <td><h2>Header 2</h2></td>
+                </tr>
+                <tr>
+                    <td>&lt;h3&gt;Header 3&lt;/h3&gt;</td>
+                    <td><h3>Header 3</h3></td>
+                </tr>
+                <tr>
+                    <td>&lt;h4&gt;Header 4&lt;/h4&gt;</td>
+                    <td><h4>Header 4</h4></td>
+                </tr>
+                <tr>
+                    <td>&lt;h5&gt;Header 5&lt;/h5&gt;</td>
+                    <td><h5>Header 5</h5></td>
+                </tr>
+                <tr>
+                    <td>&lt;h6&gt;Header 6&lt;/h6&gt;</td>
+                    <td><h6>Header 6</h6></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <h2 class="header">Attributes</h2>
+    <h2 id="attributes" class="header">Attributes</h2>
     <div id="content">
         <ul>
             <li><p>All HTML elements can have attributes.</p></li>
@@ -90,24 +119,169 @@
                     <td>href</td>
                     <td>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;</td>
                 </tr>
+                <tr>
+                    <td>src</td>
+                    <td>&lt;img src="test.jpg"&gt;</td>
+                </tr>
+                <tr>
+                    <td>alt</td>
+                    <td>&lt;img src="test.jpg" alt="Test Image"&gt;</td>
+                </tr>
             </tbody>
         </table>
     </div>
-    <h2 class="header">Quotation</h2>
+    <h2 id="comments" class="header">Comments</h2>
     <div id="content">
-        <p>Quotation mark is used for quotation.</p>
+        <p>&#9632; HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Start Tag</th>
+                    <th>Element</th>
+                    <th>End Tag</th>
+                </tr>
+                <tr>
+                    <td>&lt;!--</td>
+                    <td>Insert comment here!</td>
+                    <td>--&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="text-align: center;">&lt;!-- Write your comment here --&gt;</p>
     </div>
-    <h2 class="header">Colors</h2>
+    <h2 id="colors" class="header">Colors</h2>
     <div id="content">
-        <p>RGB or direct color codes can be used for decoration.</p>
+        <p>&#9632; HTML colors are specified with predefined color names, RGB, or HEX values.</p>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Selection</th>
+                    <th>Color Tag</th>
+                    <th>Representation</th>
+                </tr>
+                <tr>
+                    <td>Direct Color Name</td>
+                    <td>&lt;p style="color: red"&gt;Text&lt;/p&gt;</td>
+                    <td><p style="color: red;">Text</p></td>
+                </tr>
+                <tr>
+                    <td>RGB Color Code</td>
+                    <td>&lt;p style="color: rgb(255, 99, 71)"&gt;Text&lt;/p&gt;</td>
+                    <td><p style="color: rgb(255, 99, 71);">Text</p></td>
+                </tr>
+                <tr>
+                    <td>Hex Code</td>
+                    <td>&lt;p style="color: #ff6347"&gt;Text&lt;/p&gt;</td>
+                    <td><p style="color: #ff6347;">Text</p></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <h2 class="header">Links</h2>
+    <h2 id="links" class="header">Links</h2>
     <div id="content">
-        <p>Href is usually used for clickable links.</p>
+        <ul>
+            <li><p>HTML links are hyperlinks.</p></li>
+            <li><p>You can click on a link and jump to another document.</p></li>
+            <li><p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p></li>
+        </ul>
+        <hr>
+        <h3>href Attribute</h3>
+        <ul>
+            <li><p>The most important attribute of the <a> element is the href attribute, which indicates the link's destination.</p></li>
+            <li><p>The link text is the part that will be visible to the reader.</p></li>
+            <li><p>Clicking on the link text, will send the reader to the specified URL address.</p></li>
+        </ul>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Syntax</th>
+                </tr>
+                <tr>
+                    <td>href</td>
+                    <td>&lt;a href="https://www.ieu.edu.tr"&gt;Izmir University of Economics&lt;/a&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>target Attribute</h3>
+        <p>&#9632; The <span style="color: red">target</span> attribute specifies where to open the linked document.</p>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Syntax</th>
+                </tr>
+                <tr>
+                    <td>target</td>
+                    <td>&lt;a href="https://www.ieu.edu.tr/" target="_blank"&gt;Visit IEU!&lt;/a&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li><span style="color: red">_self</span> - Default. Opens the document in the same window/tab as it was clicked</li>
+            <li><span style="color: red">_blank</span> - Opens the document in a new window or tab.</li>
+            <li><span style="color: red">_parent</span> - Opens the document in the parent frame.</li>
+            <li><span style="color: red">_top</span> - Opens the document in the full body of the window</li>
+        </ul>
     </div>
-    <h2 class="header">Images</h2>
+    <h2 id="images" class="header">Images</h2>
     <div id="content">
-        <p>PNG and JPEG formats are supported.</p>
+        <ul>
+            <li>Images can improve the design and the appearance of a web page.</li>
+            <li><p>The HTML &lt;img&gt; tag is used to embed an image in a web page.</p></li>
+        </ul>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Syntax</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>&lt;img src="ieu_logo.jpg" alt="Izmir University of Economics"&gt;</td>
+                    <td><img src="ieu_logo.jpg" alt="Izmir University of Economics" width="150px" height="150px"></td>
+                </tr>
+                <tr>
+                    <td>&lt;img src="google.png" alt="Google"&gt;&lt;/td&gt;
+                    <td><img src="google.png" alt="Google" width="150px" height="150px"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>src Attribute</h3>
+        <ul>
+            <li><p><span style="color: red">src</span> - Specifies the path to the image.</p></li>
+            <li><p><span style="color: red">alt</span> - Specifies an alternate text for the image.</p></li>
+        </ul>
+        <h3>Animated Images</h3>
+        <table>
+            <tr>
+                <th>Syntax</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>&lt;img src=amogus.gif alt="Amongus GIF" style="width: 100px; height: 100px;"&gt;</td>
+                <td><img src="amogus.gif" alt="Amongus GIF" style="width: 100px; height: 100px;"></td>
+            </tr>
+        </table>
+        <h3>Image Size - Width and Height</h3>
+        <table>
+            <tr>
+                <th>Attribute</th>
+                <th>Syntax</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>style</td>
+                <td>&lt;img src="google.png" alt="Google" style="width:100px;height:100px;"&gt;</td>
+                <td><img src="google.png" alt="Google" style="width:100px;height:100px;"></td>
+            </tr>
+            <tr>
+                <td>width and height</td>
+                <td>&lt;img src="google.png" alt="Google" width="200" height="200"&gt;</td>
+                <td><img src="google.png" alt="Google" width="200" height="200"></td>
+            </tr>
+        </table>
+        <h3>Image as a Link</h3>
+
     </div>
     <h2 class="header">Tables</h2>
     <div id="content">
