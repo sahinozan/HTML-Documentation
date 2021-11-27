@@ -6,14 +6,17 @@ body {
     margin: 0px;
 }
 table {
+    border: 1px solid #000;
     font-family: arial, sans-serif;
-    border-collapse: collapse;
     width: 100%;
+    border-radius: 10px;
 }
 td, th {
     border: 1px solid #000;
     text-align: center;
     padding: 8px;
+    background-color: #EEE4E3;
+    border-radius: 10px;
 }
 tr:nth-child(even) {
     background-color: #dddd;
@@ -33,7 +36,7 @@ tr:nth-child(even) {
 }
 #navigation_menu a{
     display:block;
-    color:#FF2226;
+    color:#F8B1FB;
     text-decoration: none;
 }
 #navigation_menu a:hover {
@@ -43,7 +46,7 @@ ol li{
     margin: 15px 0px 15px 0px;    
 }
 .header {
-    color: #FF2226;
+    color: #F8B1FB;
 }
 #main_header {
     width: 83%;
@@ -56,7 +59,7 @@ ol li{
 }
 #main_header a:visited {
     text-decoration: none; 
-    color: #FF2226; 
+    color: #F8B1FB; 
 }
 #main_header a:hover {
     color: #B026FF;
@@ -72,7 +75,7 @@ ol li{
     padding-top: 40px;
     padding: 10px;
     border: 5px solid greenyellow;
-    background-color: white;
+    background-color: #EFEFEF;
     color: #000;
 }
 #footer {
@@ -86,7 +89,7 @@ ol li{
     width: 100%;
 }
 #footer a {
-    color: #FF2226
+    color: #F8B1FB
 }
 #footer a:hover {
     color: #B026FF;
