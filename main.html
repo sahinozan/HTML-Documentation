@@ -21,10 +21,9 @@
         <li><a href="#colors">Colors</a></li>
         <li><a href="#links">Links</a></li>
         <li><a href="#images">Images</a></li>
-        <li><a href="link">Lists</a></li>
+        <li><a href="#lists">Lists</a></li>
         <li><a href="link">Quotation and Citation</a></li>
         <li><a href="link">Tables</a></li>
-        <li><a href="link">Test</a></li>
         <li><a href="link">Classes</a></li>
         <li><a href="link">Head</a></li>
         <li><a href="link">Layout</a></li>
@@ -147,7 +146,7 @@
                 </tr>
             </tbody>
         </table>
-        <p style="text-align: center;">&lt;!-- Write your comment here --&gt;</p>
+        <p>&#9632; &lt;!-- Write your comment here --&gt;</p>
     </div>
     <h2 id="colors" class="header">Colors</h2>
     <div id="content">
@@ -171,8 +170,8 @@
                 </tr>
                 <tr>
                     <td>Hex Code</td>
-                    <td>&lt;p style="color: #ff6347"&gt;Text&lt;/p&gt;</td>
-                    <td><p style="color: #ff6347;">Text</p></td>
+                    <td>&lt;p style="color: #ff1493"&gt;Text&lt;/p&gt;</td>
+                    <td><p style="color: #ff1493;">Text</p></td>
                 </tr>
             </tbody>
         </table>
@@ -184,10 +183,9 @@
             <li><p>You can click on a link and jump to another document.</p></li>
             <li><p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p></li>
         </ul>
-        <hr>
         <h3>href Attribute</h3>
         <ul>
-            <li><p>The most important attribute of the <a> element is the href attribute, which indicates the link's destination.</p></li>
+            <li><p>The most important attribute of the <a> element is the <span style="color: red">href</span> attribute, which indicates the link's destination.</p></li>
             <li><p>The link text is the part that will be visible to the reader.</p></li>
             <li><p>Clicking on the link text, will send the reader to the specified URL address.</p></li>
         </ul>
@@ -196,10 +194,12 @@
                 <tr>
                     <th>Attribute</th>
                     <th>Syntax</th>
+                    <th>Result</th>
                 </tr>
                 <tr>
                     <td>href</td>
-                    <td>&lt;a href="https://www.ieu.edu.tr"&gt;Izmir University of Economics&lt;/a&gt;</td>
+                    <td>&lt;a href="https://www.ieu.edu.tr" alt="Izmir University of Economics"&gt;www.ieu.edu.tr&lt;/a&gt;</td>
+                    <td><a href="https://www.ieu.edu.tr" alt="Izmir University of Economics">www.ieu.edu.tr</a></td>
                 </tr>
             </tbody>
         </table>
@@ -228,7 +228,7 @@
     <div id="content">
         <ul>
             <li>Images can improve the design and the appearance of a web page.</li>
-            <li><p>The HTML &lt;img&gt; tag is used to embed an image in a web page.</p></li>
+            <li><p>The HTML <span style="color: red">&lt;img&gt;</span> tag is used to embed an image in a web page.</p></li>
         </ul>
         <table>
             <tbody>
@@ -241,8 +241,8 @@
                     <td><img src="ieu_logo.jpg" alt="Izmir University of Economics" width="150px" height="150px"></td>
                 </tr>
                 <tr>
-                    <td>&lt;img src="google.png" alt="Google"&gt;&lt;/td&gt;
-                    <td><img src="google.png" alt="Google" width="150px" height="150px"></td>
+                    <td>&lt;img src="amazon.png" alt="Amazon"&gt;</td>
+                    <td><img src="amazon.png" alt="Amazon" width="200px" height="200px"></td>
                 </tr>
             </tbody>
         </table>
@@ -281,34 +281,40 @@
             </tr>
         </table>
         <h3>Image as a Link</h3>
-
-    </div>
-    <h2 class="header">Tables</h2>
-    <div id="content">
+        <p>&#9632; To use an image as a link, put the <span style="color: red">&lt;img&gt;</span> tag inside the <span style="color: red">&lt;a&gt;</span> tag.</p>
         <table>
-            <tbody>
-                <tr>
-                    <th>First Column</th>
-                    <th>Second Column</th>
-                    <th>Third Column</th>
-                </tr>
-                <tr>
-                    <td>Data 1</td>
-                    <td>Data 2</td>
-                    <td>Data 3</td>
-                </tr>
-                <tr>
-                    <td>Data 4</td>
-                    <td>Data 5</td>
-                    <td>Data 6</td>
-                </tr>
-                <tr>
-                    <td>Data 7</td>
-                    <td>Data 8</td>
-                    <td>Data 9</td>
-                </tr>
-            </tbody>
+            <tr>
+                <th>Syntax</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>&lt;a href="https://www.ieu.edu.tr" target="_blank&gt;
+                    &lt;img src="ieu_logo.jpg" alt="Izmir University of Economics" style="width:70px;height:70px;"&gt;&lt;/a&gt;</td>
+                <td><a href="https://www.ieu.edu.tr" target="_blank"> <img src="ieu_logo.jpg" alt="Izmir University of Economics" style="width:70px;height:70px;"></a></td>
+            </tr>
         </table>
+    </div>
+    <h2 id="lists" class="header">Lists</h2>
+    <div id="content">
+        <p>&#9632; HTML lists allow web developers to group a set of related items in lists.</p>
+        <h3>Unordered List</h3>
+        <p>&#9632; Unordered List uses bullet points.</p>
+        <p>&#9632; An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag.</p>
+        <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <p>&#9632; Ordered List uses indices.</p>
+        <p>&#9632; An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.</p>
+        <ol style="line-height: 30%;">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
     </div>
     <h2 class="header">Classes</h2>
     <div id="content">
