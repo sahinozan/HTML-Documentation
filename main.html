@@ -22,8 +22,8 @@
         <li><a href="#links">Links</a></li>
         <li><a href="#images">Images</a></li>
         <li><a href="#lists">Lists</a></li>
-        <li><a href="link">Quotation and Citation</a></li>
-        <li><a href="link">Tables</a></li>
+        <li><a href="#quotation">Quotation and Citation</a></li>
+        <li><a href="#tables">Tables</a></li>
         <li><a href="link">Classes</a></li>
         <li><a href="link">Head</a></li>
         <li><a href="link">Layout</a></li>
@@ -175,6 +175,20 @@
                 </tr>
             </tbody>
         </table>
+        <h3>Span Tag</h3>
+        <p>&#9632; The <span style="color: red">&lt;span&gt; </span>tag is an inline container used to mark up a part of a text, or a part of a document.</p>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Syntax</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;My mother has &lt;span style="color:blue"&gt;blue&lt;/span&gt; eyes.&lt;/p&gt;</td>
+                    <td><p>My mother has <span style="color:blue">blue</span> eyes.</p></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <h2 id="links" class="header">Links</h2>
     <div id="content">
@@ -316,13 +330,64 @@
             <li>Item 4</li>
         </ol>
     </div>
-    <h2 class="header">Classes</h2>
+    <h2 id="quotation" class="header">Quotation and Citation</h2>
     <div id="content">
-        <p>Under construction.</p>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Tag</th>
+                    <th>Example</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>&lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+                        For 50 years, WWF has been protecting the future of nature.
+                        WWF works in 100 countries.
+                        &lt;/blockquote&gt;</td>
+                    <td><blockquote cite="http://www.worldwildlife.org/who/index.html">
+                        For 50 years, WWF has been protecting the future of nature.
+                        WWF works in 100 countries.
+                        </blockquote></td>
+                </tr>
+                <tr>
+                    <td>&lt;q&gt;</td>
+                    <td>&lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;</td>
+                    <td><p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p></td>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>&lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;</td>
+                    <td><p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p></td>
+                </tr>
+                <tr>
+                    <td>&lt;address&gt;</td>
+                    <td>&lt;address&gt;
+                        Written by John Doe.&lt;br&gt; 
+                        Visit us at:&lt;br&gt; 
+                        Example.com&lt;br&gt; 
+                        Box 564, Disneyland&lt;br&gt; 
+                        USA
+                        &lt;/address&gt;</td>
+                    <td><address>
+                        Written by John Doe.<br> 
+                        Visit us at:<br>
+                        Example.com<br>
+                        Box 564, Disneyland<br>
+                        USA
+                        </address></td>
+                </tr>
+                <tr>
+                    <td>&lt;bdo&gt;</td>
+                    <td>&lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;</td>
+                    <td><bdo dir="rtl">This text will be written from right to left</bdo></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <h2 class="header">Head</h2>
+    <h2 id="tables" class="header">Tables</h2>
     <div id="content">
-        <p>Under construction.</p>
+        <p>&#9632; HTML tables allow web developers to arrange data into rows and columns.</p>
     </div>
     <h2 class="header">Layout</h2>
     <div id="content">
