@@ -24,9 +24,9 @@ tr:nth-child(even) {
 }
 #sidebar {
     position: fixed;
-    width: 13%;
+    width: 200px;
     float:left;
-    padding: 120px 0px 30px 20px;
+    padding: 20px 0px 30px 20px;
     border-right: 5px solid #333;
 }
 #navigation_menu a{
@@ -48,7 +48,6 @@ ol li{
     background-color: #282c34; 
     border-bottom: 5px solid #333;
     text-align: center;
-    position: fixed;
 }
 #main_header a:visited {
     text-decoration: none; 
@@ -75,7 +74,7 @@ ol li{
     color: #000;
 }
 #footer {
-    width: 13%;
+    width: 200px;
     padding-top: 36px;
     padding-bottom: 36px;
     padding-right: 39px;
